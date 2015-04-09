@@ -2,3 +2,7 @@ This is your new Play application
 =================================
 
 This file will be packaged with your application, when using `activator dist`.
+
+After downloading this repo locally, you can run with ./activator run
+
+The application can be displayed in a browser by going to http://localhost:9000/
