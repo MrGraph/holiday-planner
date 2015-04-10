@@ -1,7 +1,8 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main("Holiday Planner") {
 
+	<link href="@routes.Assets.at("stylesheets/index.css")" rel="stylesheet">
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -18,7 +19,7 @@
             <div class="carousel-caption">
               <h1>Hawaii</h1>
               <p>From $2000</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">See this vacation</a></p>
+              <p><a class="btn btn-lg btn-primary" href="@routes.Application.vacations()" role="button">See this vacation</a></p>
             </div>
           </div>
         </div>
@@ -28,7 +29,7 @@
             <div class="carousel-caption">
               <h1>Aspen</h1>
               <p>From $1500</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">See this vacation</a></p>
+              <p><a class="btn btn-lg btn-primary" href="@routes.Application.vacations()" role="button">See this vacation</a></p>
             </div>
           </div>
         </div>
@@ -38,7 +39,7 @@
             <div class="carousel-caption">
               <h1>Venice</h1>
               <p>From $2500</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">See this vacation</a></p>
+              <p><a class="btn btn-lg btn-primary" href="@routes.Application.vacations()" role="button">See this vacation</a></p>
             </div>
           </div>
         </div>
