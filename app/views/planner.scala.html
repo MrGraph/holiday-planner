@@ -1,3 +1,37 @@
-
+@(vacationForm: Form[views.formdata.VacationFormData])
 
 @import views.html.bootstrap3._
+@import helper._
+
+@main("Holiday Planner") {
+
+<div class="container">
+<div class="well">
+@form(routes.Application.postPlanner(), 'class -> "form-horizontal") {
+
+
+	<fieldset>
+
+	<div id="legend">
+		<legend>Dream Vacation</legend>
+	</div>
+	
+	@text(vacationForm("location"),
+		  label="Location",
+		  placeholder="Somewhere on earth",
+		  help = "Please enter a desired destination")
+		  
+		  
+	<div class="form-group">
+    	<div class="col-sm-offset-2 col-sm-10">
+      		<button id="submit" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+      		<button id="cancel" class="btn cancel">Cancel</button>
+    	</div>
+  	</div>
+	</fieldset>
+	
+}
+</div>
+</div>
+
+}
