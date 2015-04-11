@@ -15,4 +15,7 @@ public class Application extends Controller {
     	return ok(vacations.render());
     }
 
+    public static Result planner() {
+    	return ok();
+    }
 }
