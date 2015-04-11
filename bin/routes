@@ -7,5 +7,9 @@ GET     /                           controllers.Application.index()
 
 GET		/vacations					controllers.Application.vacations()
 
+GET		/planner					controllers.Application.planner()
+
+POST	/planner					controllers.Application.postPlanner()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
