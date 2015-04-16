@@ -1,13 +1,12 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
-
-import views.html.*;
-
-import views.formdata.*;
-
 import play.data.Form;
+import play.mvc.Controller;
+import play.mvc.Result;
+import views.formdata.VacationFormData;
+import views.html.index;
+import views.html.planner;
+import views.html.vacations;
 
 public class Application extends Controller {
 

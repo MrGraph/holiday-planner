@@ -1,0 +1,16 @@
+Add fields to the form which includes traveler preferences:
+    Smoking/Non-smoking
+    Vacation Keywords
+    Distance willing to travel from a location 
+    Length of vacation
+
+Add logos to form:
+    Calendar for dates, globe for location, etc
+
+
+Image based navbar below big pictures
+    Has top things in certain category (e.g Top 10 beaches around the world)
+
+Reviews on main page below navbar
+
+Description of vacation and link to some page for each vacation on vacations page

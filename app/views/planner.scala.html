@@ -16,25 +16,36 @@
 		<legend>Dream Vacation</legend>
 	</div>
 	
+	
 	@text(vacationForm("location"),
 		  label="Location",
 		  placeholder="Somewhere on earth",
-		  help = "Please enter a desired destination")
+		  glyphicon="globe",
+		  help = "Please enter a desired destination (optional)")
 		  
 	@text(vacationForm("start_date"),
 		  label="Start Date",
-		  placeholder="Start Date",
-		  help = "Please enter a start date")
+		  placeholder="MM-DD-YYYY",
+		  glyphicon="calendar",
+		  help = "Please enter a start date (optional)")
 		  
 	@text(vacationForm("end_date"),
 		  label="End Date",
-		  placeholder="End Date",
-		  help = "Please enter an end date")
+		  placeholder="MM-DD-YYYY",
+		  glyphicon="calendar",
+		  help = "Please enter an end date (optional)")
 		  
 	@text(vacationForm("max_price"),
 		  label="Max Price",
 		  placeholder="$0.00",
+		  glyphicon="usd",
 		  help = "Enter the largest sum of money you're willing to pay")
+		  
+	@text_area(vacationForm("keywords"),
+			  label="Keywords",
+			  placeholder="Beach, Relaxing, etc.",
+			  glyphicon="comment",
+			  help = "Enter some keywords pertaining to the kind of vaction you want.")
 		  
 	<div class="form-group">
     	<div class="col-sm-offset-2 col-sm-10">
