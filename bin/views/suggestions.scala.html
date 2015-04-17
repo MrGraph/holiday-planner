@@ -1,0 +1,42 @@
+@(theVacationList : List[models.Vacation])
+
+@main("Holiday Planner"){
+
+	<div class="container marketing">
+
+	<h2 class="sub-header">Your Top Vacations</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Package</th>
+              </tr>
+            </thead>
+
+			
+	
+			<tbody>
+			
+			@for(vacation <- theVacationList){
+				<tr>
+					<td>
+						<p>Location: @vacation.location</p>
+						<p>Start Date: @vacation.start_date</p>
+						<p>End Date: @vacation.end_date</p>
+						<p>Cost: @vacation.the_cost</p>
+						<p>Keywords: 
+							@for(keyword <- vacation.keywords){
+								@keyword
+							}
+						</p>
+					</td>
+				</tr>
+			}
+			
+			</tbody>
+	
+		</table>
+	</div>
+	</div>
+
+}
