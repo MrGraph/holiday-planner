@@ -24,6 +24,14 @@ public class Application extends Controller {
     }
     
     public static Result postPlanner() {
-    	return ok("cool");
+    	Form<VacationFormData> vacationForm = Form.form(VacationFormData.class);
+    	Form<VacationFormData> boundForm = vacationForm.bindFromRequest();
+    	
+    	VacationFormData data = boundForm.get();
+    	
+    	//TODO Check for specific keywords, etc, to redirect to the top recommended vacation
+    	//for the user.
+    	
+    	return ok(data.location);
     }
 }
